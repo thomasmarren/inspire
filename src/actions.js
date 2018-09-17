@@ -4,6 +4,7 @@ import { max } from 'd3-array';
 
 export function callDailyApi( user ){
 	return dispatch => {
+		//Api call to get the users daily energy usage data
 		fetch(api[user].daily)
 			.then(response => response.json())
 			.then((data) => {
@@ -12,6 +13,7 @@ export function callDailyApi( user ){
 		    var array = [];
 		    Object.values(data.daily_energy_usage).map((d) => (
 		      array.push({
+		      	// create new keys to easily reference in D3 graph call
 		        temperature: +d[Object.keys(d)[0]],
 		        date: Object.keys(d)[0]
 		      })
@@ -28,6 +30,7 @@ export function callDailyApi( user ){
 
 export function callSummaryApi(user){
 	return dispatch => {
+		//Api call to get the users summary data
 		fetch(api[user].summary)
 			.then(response => response.json())
 			.then((data) => {

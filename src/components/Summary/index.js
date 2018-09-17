@@ -10,6 +10,7 @@ class Summary extends Component {
   }
 
   onChange(event){
+    // Re-call the summary & daily api's to update the interface
     this.props.dispatch(changeUser( event.target.value ))
     this.props.dispatch(callSummaryApi( event.target.value ))
     this.props.dispatch(callDailyApi( event.target.value ))

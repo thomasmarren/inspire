@@ -9,10 +9,15 @@ import svg from '../../utils/svg.js';
 class Chart extends Component {
 
   componentDidMount() {
+    //on load call api
     this.props.dispatch(callDailyApi( this.props.user ))
   }
 
   render() {
+    // Since both the D3 library & React library attempt to take over DOM manipulation, 
+    // changes have to be made with D3 calls to play well with React. 
+    // Would look into cleaning up svg creation with more time
+    
     return (
       <div className="flex center">
         <svg width={svg.svgWidth} height={svg.svgHeight}>
