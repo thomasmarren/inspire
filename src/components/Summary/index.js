@@ -6,6 +6,7 @@ import './index.css';
 class Summary extends Component {
   
   componentDidMount() {
+    //on load call api
     this.props.dispatch(callSummaryApi(this.props.user))
   }
 

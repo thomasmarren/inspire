@@ -20,7 +20,7 @@ class Chart extends Component {
     
     return (
       <div className="flex center">
-        <svg width={svg.svgWidth} height={svg.svgHeight}>
+        <svg width={svg.svgWidth} height={svg.svgHeight} viewBox="0 0 960 500" preserveAspectRatio="xMidYMid meet">
           <g transform={`translate(${svg.margin.left}, ${svg.margin.top})`}>
             <g
               className="axis axis--x"
