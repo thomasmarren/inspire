@@ -1,0 +1,24 @@
+.summary {
+  width: 550px;
+  max-width: 100%;
+}
+
+.bar {
+  fill: #e7158b;
+}
+
+.bar:hover {
+  fill: #ad0d67;
+}
+
+.axis--y path {
+  display: none;
+}
+
+.axis--x path {
+  display: none;
+}
+
+.axis--x .tick text {
+  transform: translate(-23px, 23px) rotate(-55deg);
+}
