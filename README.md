@@ -1,4 +1,4 @@
-![Inspire](https://raw.githubusercontent.com/tmoreton/inspire/master/src/img/logo.svg)
+![Inspire](https://raw.githubusercontent.com/tmoreton/inspire/master/src/img/logo.jpg)
 
 # Inspire API React App
 
